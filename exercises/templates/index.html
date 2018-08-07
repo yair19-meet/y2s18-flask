@@ -1,1 +1,22 @@
 <!-- Put the HTML template for your page here! -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Official Web Page</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    {% if likes_same_sport == True %}
+        <h1>Basketball Players:</h1>
+        <ul>
+            {% for p in players %}
+            <li> {{p}} </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+    <h1>Basketball</h1>
+    <h1>Basketball is the best sport because it's the most fun.</h1>
+    {% endif %}
+
+</body>
+</html>
