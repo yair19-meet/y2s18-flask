@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    <div class="main">
     {% if likes_same_sport == True %}
         <h1>Basketball Players:</h1>
         <ul>
@@ -17,6 +18,9 @@
     <h1>Basketball</h1>
     <h1>Basketball is the best sport because it's the most fun.</h1>
     {% endif %}
+    <img src="{{ url_for('static', filename='DerrickRose.jpg') }}" width="200px" id="Derrick">
+    <img src="{{ url_for('static', filename='stephenCurry.jpg') }}" height="250px" id="Steph">
+    </div>
 
 </body>
 </html>
